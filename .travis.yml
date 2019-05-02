@@ -1,4 +1,6 @@
-﻿env:
+﻿language: python
+
+env:
   - DOCKER_COMPOSE_VERSION=3
 
 before_install:
