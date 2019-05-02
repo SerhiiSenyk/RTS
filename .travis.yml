@@ -2,7 +2,7 @@
 services:
     - docker
 
-language: python
+language: python36
 
 env:
   - DOCKER_COMPOSE_VERSION=3
