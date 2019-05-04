@@ -12,6 +12,15 @@ env:
 before_install:
   - docker-compose up  -d
   #- docker ps
+script:
+  - bundle exec rake test
+
+deploy:
+  provider: gae
+  keyfile: "YOUR SERVICE ACCOUNT JSON FILE"
+  project: "YOUR PROJECT ID"
+  skip_cleanup: true
+
 after_script:
   - docker-compose stop
   - docker-compose rm -f
