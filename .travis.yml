@@ -13,7 +13,7 @@ before_install:
   - docker-compose up  -d
   #- docker ps
 script:
-  - rts_script_1
+  pass
 
 deploy:
   provider: gae
