@@ -13,7 +13,7 @@ before_install:
   - docker-compose up  -d
   #- docker ps
 script:
-  #pass
+  test.py
 
 deploy:
   provider: gae
