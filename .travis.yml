@@ -12,3 +12,6 @@ env:
 before_install:
   - docker-compose up  --build
   #- docker ps
+after_script:
+  - docker-compose stop
+  - docker-compose rm -f
