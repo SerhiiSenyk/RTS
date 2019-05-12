@@ -10,7 +10,7 @@ env:
   - DOCKER_COMPOSE_VERSION=3
 
 script:
-  - docker-compose up -d 
+  - docker-compose up --build 
   - docker ps
 
 
