@@ -10,7 +10,7 @@ env:
   - DOCKER_COMPOSE_VERSION=3
 
 script:
-  - docker-compose up --build 
+  - docker-compose up -d 
   - docker ps
 #after_success:
   # [START auth]
