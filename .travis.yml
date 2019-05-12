@@ -10,8 +10,8 @@ env:
   - DOCKER_COMPOSE_VERSION=3
 
 script:
-  - docker-compose up --build 
-  #- docker ps
+  - docker-compose up -d 
+  - docker ps
 
 
 #after_script:
