@@ -9,18 +9,11 @@ rvm:
 env:
   - DOCKER_COMPOSE_VERSION=3
 
-before_install:
-  - docker-compose up  -d
-  #- docker ps
 script:
-  test.py
+  - docker-compose up --build 
+  #- docker ps
 
-deploy:
-  provider: gae
-  keyfile: "YOUR SERVICE ACCOUNT JSON FILE"
-  project: "YOUR PROJECT ID"
-  skip_cleanup: true
 
-after_script:
-  - docker-compose stop
-  - docker-compose rm -f
+#after_script:
+ # - docker-compose stop
+ # - docker-compose rm -f
